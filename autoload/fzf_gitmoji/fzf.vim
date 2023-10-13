@@ -30,7 +30,7 @@ function! fzf_gitmoji#fzf#run(...)
   return fzf#run(fzf#wrap({
         \ 'source': 'gitmoji list',
         \ 'sink': function('s:sink_add'),
-        \ }))
+        \ }, 1))
 endfunction
 
 
